@@ -1,0 +1,145 @@
+<html lang="en">
+  <head>
+	<meta charset="UTF-8">
+    <title>Save a url</title>
+</head>
+<style>
+html
+{
+	height:100px;
+	
+    height: 100px;
+    width: 270px;
+    position: relative;
+
+}
+body {
+    padding: 20;
+}
+div#user {
+    padding: 10px;
+}
+input[type="text"] {
+    padding: 05px;
+    width: 200;
+}
+input[type="submit"] {
+    background-color:#3e8e41;
+    border: none;
+    color: white;
+    padding: 5px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 5px auto;
+	font-family: TimesnewRoman;
+}
+body {
+    font-family:timesnewroman,airal,-webkit-pictograph;
+	background-color: dodgerblue;
+    font-size: 14;
+}
+a
+{   margin-left: 200;
+    text-decoration: none;
+    color: coral;;
+}
+select {
+    padding: 05px;
+    width: 200;
+}	
+.button {
+    background-color: green;
+    border: none;
+    color: white;
+    padding: 5px 75px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.button:hover {background-color:red;}
+hr#id2
+{
+   display: block;
+	    
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: -25;
+    margin-right: -25;
+    border-style: inset;
+    border-width: 1px;
+
+}
+input[type="submit"]:hover 
+{
+ opacity: 1.0;
+ transition: opacity .55s ease-in-out;
+ -moz-transition: opacity .55s ease-in-out;
+ -webkit-transition: opacity .55s ease-in-out;
+ background-color:red;
+}
+
+input[type="submit"]:active {
+ 	
+  background-color: red;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+img {
+	float: right;
+	height: 20px;
+	right: 100px;
+	position: relative;
+    right: -20px;
+    top: 30px;
+}
+hr#id
+{
+	    position: relative;
+    display: block;
+	    top: 15;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: -25;
+    margin-right: -25;
+    border-style: inset;
+    border-width: 1px;
+}
+</style>
+<script src="JS/sweetalert.min.js"></script>
+<script src="JS/jquery.min.js"></script>
+<script src="JS/script1.js"></script>
+<body>
+<center><h3>Bookmark</h3></center>
+<hr id="id2">
+<form id="#form"  action="./" method="post">
+<div id="user"> 
+	<label id="user">Topic: </label><br>
+	<select name="topic" id="topic">
+	<option value="Physics">Physics</option>
+	<option value="Chemistry">Chemistry</option>
+	<option value="Maths">Maths</option>
+	<option value="Biology">Biology</option>
+	<option value="ComputerScience">Computer Science</option>
+	</select>
+	<br>
+	<br>
+	<label id="user">Tag:</label> <br>
+	<input type="text" name="tag" id="tag" required />
+	<br>
+</div>
+<br>
+<center><input type="submit" name="submit"  value="Save a Link"/> </center></font>
+</form>
+<div class="err" id="add_err"></div>
+<p align="right"><button id="checkout" class="button"><font face="Times New Roman">Log Out</font></button></p>
+
+</body>
+<hr id="id">
+<img src="images/ahaguru_logo.png" height="41">
+
+</html>

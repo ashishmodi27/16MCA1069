@@ -1,0 +1,174 @@
+/* ------------------------ */
+/* Variables				*/
+/* ------------------------ */
+/* ------------------------ */
+/* Some Helper Mixins		*/
+/* ------------------------ */
+/* ------------------------ */
+/* The Magic :)				*/
+/* ------------------------ */
+.slide-down {
+  transition: transform;
+  transition-duration: 200ms;
+  transition-timing-function: ease-out;
+}
+.slide-down:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -400px;
+  width: 620px;
+  height: 400px;
+  background: #fff;
+  opacity: 0;
+  transition: opacity, transform;
+  transition-duration: 200ms;
+  transition-timing-function: ease-out;
+  pointer-events: none;
+}
+
+  transition: transform;
+  transition-duration: 200ms;
+  transition-timing-function: ease-out;
+}
+.shake:hover {
+  animation: shake 10, grow steps(10) forwards;
+  animation-duration: 0.1s, 1s;
+}
+.shake:hover.from-center {
+  animation: shake-from-center 10, grow steps(10) forwards;
+  animation-duration: 0.1s, 1s;
+}
+
+/* ------------------------ */
+/* Animations				*/
+/* ------------------------ */
+@keyframes grow {
+  from {
+    width: 200px;
+    height: 200px;
+  }
+  to {
+    width: 620px;
+    height: 400px;
+  }
+}
+@keyframes shake {
+  0% {
+    transform: translateX(-5px) rotate(-5deg);
+  }
+  50% {
+    transform: translateX(5px) rotate(5deg);
+  }
+  100% {
+    transform: translateX(-5px) rotate(-5deg);
+  }
+}
+@keyframes shake-from-center {
+  0% {
+    transform: translateX(calc(-50% - 5px)) rotate(-5deg);
+  }
+  50% {
+    transform: translateX(calc(-50% + 5px)) rotate(5deg);
+  }
+  100% {
+    transform: translateX(calc(-50% - 5px)) rotate(-5deg);
+  }
+}
+/* ------------------------ */
+/* General Styles			*/
+/* ------------------------ */
+body, h1, h3, h4 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  color: white;
+}
+
+a {
+  color: white;
+}
+
+.row {
+  position: relative;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  background-size: cover;
+  background-color:#b3b3ff;
+  background-size: 100%;
+
+
+}
+.row:first-child, .row:last-child {
+  background: #41a6b4;
+}
+.row.header .row__inner, .row.footer .row__inner {
+  text-align: center;
+  line-height: 0.75em;
+  padding: 50px 0;
+}
+.row:not(.header):not(.footer) .row__inner {
+  height: 500px;
+}
+
+.row__inner {
+  margin: 0 auto;
+  padding: 10px 0 30px 0;
+  width: 620px;
+  position: relative;
+}
+
+.block {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+.block:before, .block:after {
+  border-radius: 5px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.block:hover {
+  z-index: 100;
+}
+
+.to-left,
+.to-left:before,
+.to-left:after {
+  right: 0;
+}
+
+.to-right,
+.to-right:before,
+.to-right:after {
+  left: 0;
+}
+
+.from-center,
+.from-center:before,
+.from-center:after {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+/* ------------------------ */
+/* Lorem Pixels				*/
+/* ------------------------ */
+
+
+.shake:nth-child(2) {
+    background-color:#b3b3ff;
+  background-size: cover;
+  background-position: center center;
+}
+.shake:nth-child(3) {
+    background-color:#b3b3ff;
+  background-size: cover;
+  background-position: center center;
+}
+.shake:nth-child(4) {
+    background-color:#b3b3ff;
+  background-size: cover;
+  background-position: center center;
+}

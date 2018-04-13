@@ -1,0 +1,124 @@
+* { Box-sizing: Border-box }
+.mycontainer{
+	white-space: nowrap;
+	overflow-x: hidden;
+	width: 934px;
+}
+.box{
+	display: inline-block;
+	/*border: 2px black solid;
+  	background-color: pink;*/
+  	padding: 20px;
+	width: 630px;
+	height: 350px;
+	margin-left:300px;
+	margin-top:150px;
+	}
+.box2{
+	background-color: yellow;
+}
+	 .container {
+  height: 7.5rem;
+  width: 37.5rem;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.flip-container {
+  -webkit-perspective: 1000;
+          perspective: 1000;
+  margin: 0.5rem;
+  float: left;
+  cursor: pointer;
+}
+.flip-container .flippable {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  position: relative;
+}
+.flip-container .flipme {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+.flip-container:hover .flippable {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.flip-container, .front, .back {
+  width: 6.25rem;
+  height: 6.25rem;
+  line-height: 6.25rem;
+  text-align: center;
+  font-size: 2.5rem;
+  border-radius: 0.5rem;
+}
+
+.front, .back {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.front {
+  z-index: 2;
+  color: black;
+}
+.back {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  font-size: 1.1rem;
+  border: 0.15rem solid;
+  font-family: Verdana;
+  color: white;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+.ac-code1 .front {
+  background: #1E90FF;  
+}
+.ac-code1 .back {
+  background: #00509e;
+  border-color: #9ecfff;
+}
+
+.ac-code2 .front {
+  background: #00FF00;
+}
+.ac-code2 .back {
+  background: green;
+  border-color: #80ff80;
+}
+
+.ac-code3 .front {
+  background: gold;
+}
+.ac-code3 .back {
+  background: #806c00;
+  border-color: #ffeb80;
+}
+
+.ac-code4 .front {
+  background: #FF4500;
+}
+.ac-code4 .back {
+  background: #802300;
+  border-color: #ffa280;
+}
+
+.ac-code5 .front {
+  background: #CF0000;
+}
+.ac-code5 .back {
+  background: #500000;
+  border-color: #ff5050;
+}

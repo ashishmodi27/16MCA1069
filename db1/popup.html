@@ -1,0 +1,130 @@
+<html lang="en">
+  <head>
+	<meta charset="UTF-8">
+    <title>Save a url</title>
+</head>
+<style>
+body {
+    padding: 20;
+}
+div#user {
+    padding: 10px;
+}
+input[type="text"] {
+    padding: 05px;
+    width: 200;
+}
+input[type="submit"] {
+    background-color:#3e8e41;
+    border: none;
+    color: white;
+    padding: 5px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 5px auto;
+	font-family: TimesnewRoman;
+}
+hr#id2
+{
+   display: block;
+	    
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: -25;
+    margin-right: -25;
+    border-style: inset;
+    border-width: 1px;
+
+}
+body {
+    font-family:timesnewroman,airal,-webkit-pictograph;
+	background-color: dodgerblue;
+    font-size: 14;
+}
+a
+{   margin-left: 200;
+    text-decoration: none;
+    color: coral;;
+	}
+select {
+    padding: 05px;
+    width: 200;
+}	
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 5px 75px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.button:hover {background-color:red;}
+
+input[type="submit"]:hover {background-color:red;}
+
+input[type="submit"]:active {
+ 	
+  background-color: red;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+input[type="text"] {
+    padding: 05px;
+    width: 200;
+}
+input[type="password"] {
+    width: 200px;
+	padding: 05px;
+}
+input[type="submit"] {
+    size: 200px;
+    background-color: black;
+    color: white;
+    margin: 5px auto;
+    display: block;
+    padding: 5px 50px;
+}
+body {
+	    background-color: dodgerblue;
+    font-family:timesnewroman,airal,-webkit-pictograph;
+	
+    font-size: 14;
+}
+</style>
+
+
+<body>
+
+<a href="http://www.ahaguru.com" target="_blank">
+
+<h3><center><img src="images/ahaguru_logo.png"> </center></h3>
+</a>
+<hr id="id2">
+</div>
+<center><h3>Login</h3></center>
+<form id="kform" action="./" method="post">
+
+	<div id="user"> 
+	<label id="user">Email: </label><br>
+	<input type="text" name="username"  required/>
+	<br>
+	<br>
+		<label id="user">Password:</label> <br>
+	<input type="password" name="password" required/>
+	<br>
+</div>
+	<center><input type="submit" name="submit" value="Login"/> </center>
+</form>
+<div class="err" id="add_err"></div>
+</body>
+
+<script src="JS/jquery.min.js"></script>
+<script src="JS/script.js"></script>
+
+</html>

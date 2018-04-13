@@ -1,0 +1,19 @@
+.abcd{display:inline-block;text-align:center}
+.abcd{padding:10px 20px; font-size:20px;border-radius:5px;color:#FFF;text-decoration:none;background: #06C; font-weight:bold;}
+.abcd2{display:inline-block;text-align:center;}
+.abcd2{padding:10px 100px; font-size:20px;border-radius:5px;color:#FFF;text-decoration:none;background: #FFA500; font-weight:bold;}
+.abcd0{display:inline-block;text-align:center}
+.abcd0{padding:10px 100px; font-size:20px;border-radius:5px;color:#FFF;text-decoration:none;background: #008000; font-weight:bold;}
+.abcd1{display:inline-block;text-align:center}
+.abcd1{padding:10px 100px; font-size:20px;border-radius:5px;color:#FFF;text-decoration:none;background: #F00; font-weight:bold;}
+	span{
+		font-size: 25px;
+		font-family: cursive;
+		color: white;
+		animation: blink 1s linear infinite;
+	}
+@keyframes blink{
+0%{opacity: 0;}
+50%{opacity: .5;}
+100%{opacity: 1;}
+}
